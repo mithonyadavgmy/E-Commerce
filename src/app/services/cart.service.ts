@@ -73,7 +73,7 @@ export class CartService {
 
   getTotal(items: CartItem[]): number {
     return items
-      .map((item) => item.price * item.quantity)
+      .map((item) => item.price * 0.9 *item.quantity)
       .reduce((prev, current) => prev + current, 0);
   }
 }
