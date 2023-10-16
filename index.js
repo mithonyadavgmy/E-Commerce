@@ -7,6 +7,6 @@ app.use('*', function(req, res) {
     res.sendFile(path.join(__dirname,'/dist/ecommerce-store/index.html'));
 });
 
-app.listen(2121, () => {
+app.listen(3000, () => {
     // console.log("Node serve is running");
 });
